@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- Row 1 for initial header on page -->
+ <div class="container">
+    <div class="row">
+      <div class="col-md-12 umbotron text-left">
+        <br><h1><strong>J</strong>udging <strong>A</strong> <strong>B</strong>ook <strong>B</strong>y <strong>I</strong>ts <strong>C</strong>over</h1>
+        <br>
+      </div>
+    </div>
+
+    <!-- Row 2 for the paragrah explanation -->
+    <div class="row">
+        <div class="col-md-12">
+            <p class="lead">
+              The goal of this analysis is to gain the ability to predict the genre of a book by viewing its cover.  
+            </p>
+        </div>
+    </div>
+
+    <!--Row 3 for paragraph explanation -->
+    <div class="row">
+      <div class='col-md-12'>
+        <p>For our final project, we have trained a Convolutional Neural Network with the goal of predicting a book's genre based
+          solely on an image of the book's cover. We utilized new technologies learned in class and through external research. 
+          Data was assembled and manipulated using Python and Pandas, the model was trained using Keras and a TensorFlow backend,
+          and visualizations of the model's performance are displayed in this Flask app using JavaScript (D3 and Plotly), HTML and CSS. 
+          <hr>Below is a list of all Categories:</p>
+      </div>
+    </div>
+
+    <!--Row 4 for paragraph explanation -->
+    <div class="row">
+      <div class='col-md-12'>
+        <p>
+        Arts & Photography, 
+        Biographies & Memoirs, 
+        Business & Money, 
+        Calendars, 
+        Children's Books, 
+        Comics & Graphic Novels, 
+        Computers & Technology, 
+        Cookbooks, Food & Wine, 
+        Crafts, Hobbies & Home, 
+        Christian Books & Bibles, 
+        Engineering & Transportation, 
+        Health, Fitness & Dieting, 
+        History, 
+        Humor & Entertainment, 
+        Law, 
+        Literature & Fiction, 
+        Medical Books, 
+        Mystery, Thriller & Suspense, 
+        Parenting & Relationships, 
+        Politics & Social Sciences, 
+        Reference, 
+        Religion & Spirituality, 
+        Romance, 
+        Science & Math, 
+        Science Fiction & Fantasy, 
+        Self-Help, 
+        Sports & Outdoors, 
+        Teen & Young Adult, 
+        Test Preparation, and 
+        Travel.
+      <hr>
+      Our image data comes from a dataset created by researchers at Kyushu University in Japan. The full dataset contains more than 200,000 images
+      across the 30 categories. You can see the distribution among these categories in the below chart. For the purposes of training, validation
+      and testing, samples were taken that were balanced across all 30 categories.
+    </p>
+      </div>
+    </div>
+  <div class='col-md-12'>
+  <div id='plot'></div>
+  </div>
+</div>
+{% endblock %}

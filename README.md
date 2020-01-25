@@ -1,2 +1,5 @@
-# jabbic
-Final project for Columbia Engineering Data Analytics Bootcamp  https://sheltered-journey-82361.herokuapp.com
+# Judging A Book By Its Cover
+
+The aim of this project is to train a convolutional neural network (CNN) to predict the genre of a book (from 30 different options) based on an image of its cover. The model is pre-trained on the ImageNet database and adapted to fit the training data. It was trained in a Google Colab notebook, but the code used for training and testing is included in the training.py and testing.py Python files, respectively. Training was conducted using Keras with a Tensorflow backend.
+
+The data for this project was originally assembled by researchers from Kyushu University. There are roughly 51,000 224x224x3 images in the training set, 5,100 in the validation set and 6,000 in the testing set. After two rounds of training, the model correctly classified 26.33% of the test images.

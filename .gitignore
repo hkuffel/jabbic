@@ -1,0 +1,8 @@
+Imgs/
+venv
+.env
+*.pyc
+.ipynb_checkpoints
+imgs.zip
+.DS_Store
+pretrained_vgg_model.hd
